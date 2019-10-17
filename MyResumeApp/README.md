@@ -6,6 +6,6 @@ just clone the application and simply run the index.html it will run successfull
 <h2>Demo</h2>
 The basic demo of UI of application is hosted over the github pages 
 <h3>Have a Look at this :</h3>
-<h5>URL: https://cgqspider.github.io/MyResumeApp/<h5>
+<h5>URL: https://cgqspider.github.io/Static-Web-Applications/MyResumeApp/<h5>
 Have fun! Good Day 
 
