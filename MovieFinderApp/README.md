@@ -6,5 +6,5 @@ just change the API key in app.js file and simply run the index.html it will run
 <h2>Demo</h2>
 The basic demo of UI of application is hosted over the github pages which may not be running due to HTTPS connection
 So please just download the Repo and try to Run locally
-URL: https://cgqspider.github.io/MovieFinderApp/
+URL: https://cgqspider.github.io/Static-Web-Applications/MovieFinderApp/
 Have fun! Good Day 
