@@ -1,0 +1,7 @@
+{
+  "name": "My first Node express api",
+  "description": "Node.js API using express js",
+  "repository": "https://github.com/cgqspider/Node-API-MOSH-App.git",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static"]
+}
