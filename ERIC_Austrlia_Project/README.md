@@ -6,3 +6,5 @@ It is very easy to run <br/>
 simply open the index.html and whole website will open.
 
 # Demo 
+https://cgqspider.github.io/Static-Web-Applications/ERIC_Austrlia_Project/
+
