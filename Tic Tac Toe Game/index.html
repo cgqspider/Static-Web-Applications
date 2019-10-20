@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Tic Tac Toe</title>
+   
+    <style type="text/css">
+        body {
+            margin:0px;
+            padding:0px;
+            height: 589px;
+        }
+       
+    </style>
+    <script>
+        var plax;
+        var play;
+        var player = 1;
+        var flag = 2;
+        function clickbutton(btn) {
+            if (flag == 2) {
+                name(plax, play)
+                flag = -2;
+            }
+            if (player == 1) {
+                document.getElementById(btn).value = "x";
+                document.getElementById(btn).disabled = "disabled";
+
+                player = -1;
+            }
+
+            else {
+                document.getElementById(btn).value = "o";
+                document.getElementById(btn).disabled = "disabled";
+                player = 1;
+            }
+            winner()
+            
+
+        }
+
+        function winner() {
+            if (flag == 2) {
+                name(plax, play)
+                flag = -2;
+            }
+            
+            if (document.getElementById('btn1').value == "x" && document.getElementById('btn2').value == "x" && document.getElementById('btn3').value == "x" || document.getElementById('btn1').value == "x" && document.getElementById('btn4').value == "x" && document.getElementById('btn7').value == "x" || document.getElementById('btn1').value == "x" && document.getElementById('btn5').value == "x" && document.getElementById('btn9').value == "x" || document.getElementById('btn2').value == "x" && document.getElementById('btn5').value == "x" && document.getElementById('btn8').value == "x" || document.getElementById('btn3').value == "x" && document.getElementById('btn6').value == "x" && document.getElementById('btn9').value == "x" || document.getElementById('btn3').value == "x" && document.getElementById('btn5').value == "x" && document.getElementById('btn7').value == "x" || document.getElementById('btn4').value == "x" && document.getElementById('btn5').value == "x" && document.getElementById('btn6').value == "x" || document.getElementById('btn7').value == "x" && document.getElementById('btn8').value == "x" && document.getElementById('btn9').value == "x")
+            {
+                alert(plax +"  (X) win");
+            }
+            else if (document.getElementById('btn1').value == "o" && document.getElementById('btn2').value == "o" && document.getElementById('btn3').value == "o" || document.getElementById('btn1').value == "o" && document.getElementById('btn4').value == "o" && document.getElementById('btn7').value == "o" || document.getElementById('btn1').value == "o" && document.getElementById('btn5').value == "o" && document.getElementById('btn9').value == "o" || document.getElementById('btn2').value == "o" && document.getElementById('btn5').value == "o" && document.getElementById('btn8').value == "o" || document.getElementById('btn3').value == "o" && document.getElementById('btn6').value == "o" && document.getElementById('btn9').value == "o" || document.getElementById('btn3').value == "o" && document.getElementById('btn5').value == "o" && document.getElementById('btn7').value == "o" || document.getElementById('btn4').value == "o" && document.getElementById('btn5').value == "o" && document.getElementById('btn6').value == "o" || document.getElementById('btn7').value == "o" && document.getElementById('btn8').value == "o" && document.getElementById('btn9').value == "o") {
+                alert(play + "  (o) win");
+            }
+
+          
+            
+        }
+
+
+        function hello() {
+            var playerx = prompt("enter the name for the player of X");
+            var playero = prompt("enter the name for the player of O");
+            alert("This match is between  " + playerx + "(X) " + "" + " and  " + playero + "(O)");
+            player1.innerHTML = playerx;
+            player2.innerHTML = playero;
+        }
+
+        function name() {
+            var flag = 1;
+            if (flag == 1) {
+            plax = prompt("Enter the name of player for X");
+            play = prompt("Enter the name of player for Y");
+            player1.innerHTML = plax;
+            player2.innerHTML = play;
+                flag = -1;
+            }
+        }
+
+
+        
+
+
+      
+        
+        
+    </script>
+</head>
+    
+    
+<body >
+  <h1 style="text-align:center;background-color:lightgrey; color:white; font-weight:bold; font-family:'Iskoola Pota'";>TIC TAC TOE (o AND X)</h1>
+    <div id="tic" style="height:332px; width:303px; background-color:white; box-shadow:0px 0px 24px 0px; border-radius:5px; margin-top:48px; margin-left: auto; margin-right: auto; margin-bottom: auto;" >
+        <br />
+        <input type="button" style="height: 77px; width: 96px; font-size:70px; " id="btn1" onclick="clickbutton('btn1')" />
+           <input type="button" style="height: 77px; width: 97px; margin-top: 0px; font-size:70px;" id="btn2" onclick="clickbutton('btn2')"/>
+           <input type="button" style="height: 77px; width: 99px; font-size:70px;" id="btn3" onclick="clickbutton('btn3')"/>    <div id="left" style="float:left;">    </div>
+        <br />
+            
+        <input type="button" style="height: 77px; width: 96px; font-size:70px;" id="btn4"onclick="clickbutton('btn4')" />
+           <input type="button" style="height: 77px; width: 97px; font-size:70px;"id="btn5"  onclick="clickbutton('btn5')"/>
+           <input type="button" style="height: 77px; width: 99px; font-size:70px;" id="btn6" onclick="clickbutton('btn6')"/>
+        <br />
+        <input type="button" style="height: 77px; width: 96px; font-size:70px;" id="btn7" onclick="clickbutton('btn7')"/>
+           <input type="button" style="height: 77px; width: 97px; font-size:70px;" id="btn8" onclick="clickbutton('btn8')"/>
+           <input type="button" style="height: 77px; width: 99px; font-size:70px;" id="btn9" onclick="clickbutton('btn9')"/>
+        <br />
+       <a href="Default.aspx" style="text-decoration:none;"><input type="button"  style="background-color:black; color:white; height: 68px; width: 300px;" value="RESET" /></a>
+        <br />
+        <div id="names" style="position:relative; bottom:300px; left: 300px; height: 86px; font-family:Cooper; color:orange;">
+        <h1 id="player1" ></h1> <h2 style="color:grey;">VS</h2><h1 id="player2"></h1>
+    </div>
+
+</div>
+    
+    
+</body>
+</html>
