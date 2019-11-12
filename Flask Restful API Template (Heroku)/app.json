@@ -1,0 +1,7 @@
+{
+  "name": "REST API example using python",
+  "description": "This is example of REST API which can store the information of sensor and retrived whenever required. So this is a example of IOT.",
+  "repository": "https://github.com/purnimsinha/MyApi.git",
+  "logo": "https://engineering.fb.com/wp-content/uploads/2016/05/2000px-Python-logo-notext.svg_.png",
+  "keywords": ["python", "flask"]
+}
